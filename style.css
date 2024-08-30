@@ -23,7 +23,7 @@ body {
     width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    background-color: var(--charcoal-grey);
+    background-color: var(--dark-slate-grey);
     color: var(--dark-slate-grey);
 
 }
@@ -237,7 +237,7 @@ button:hover {
     .hero{
         max-height: 593px;
         max-width: 400px;
-        margin: 1rem;
+        margin: 1.5rem;
     }
 
 
@@ -253,12 +253,17 @@ button:hover {
     .first .container {
         margin: 1.5rem;
     }
+
+    .first .container h1 {
+        font-size: 3.5rem;
+    }
     .second{
         width: 504px;
         height: 520px;
         border-radius: 36px;
         padding: 4rem;
     }
+
     .second .message {
         top: 0;
     }
