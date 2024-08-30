@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+    --vermilion: hsl(4, 100%, 67%);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 842px;
+    height: 100dvh;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: var(--dark-slate-grey);
+    color: var(--dark-slate-grey);
+
+}
+
+main {
+    width: 100%;
+    min-height: 842px;
+    height: 100dvh;
+    background-color: var(--white);
+}
+
+.first {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.hero {
+    width: 100%;
+    max-height: 284px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.first .container {
+    padding-inline: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.first .container .content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.first .container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.first .container p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.first .container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.first .container ul li {
+    display: flex;
+    /* align-items: center; */
+    gap: 1rem;
+}
+
+.first .container ul li::before {
+    content: url(./assets/images/icon-list.svg);
+
+}
+
+.first .container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.first .container form .form__email{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.first .container form .form__email__label {
+    display: flex;
+    /* flex-direction:  */
+    /* gap: 0.5rem; */
+    justify-content: space-between;
+}
+
+.first .container form .form__email__label span {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 150%;
+    color: var(--vermilion);
+}
+
+.first .container form label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--dark-slate-grey);
+    line-height: 150%;
+}
+
+.first .container form input {
+    border: 1px solid hsl(231, 7%, 60%, 0.25);
+    border-radius: 5px;
+    color: var(--dark-slate-grey);
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.first .container form input.error {
+    border: 1px solid var(--vermilion);
+    background-color: hsla(4, 100%, 67%, 0.15);
+}
+
+ button{
+    width: 100%;
+    background-color: var(--charcoal-grey);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 150%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-image: linear-gradient( hsl(14, 100%, 61%), hsl(346, 100%, 66%));
+}
+
+
+
+
+
+
+.second {
+    position: relative;
+    display: none;
+    height: 100%;
+    width: 100%;
+    padding-inline: 1.5rem;
+}
+
+.second .message {
+    position: relative;
+    top: 149px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+}
+
+.second .message img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+.second .message h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.second .message p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.second .message p span{
+    font-weight: 700;
+}
+
+.second  button {
+    position: absolute;
+    bottom: 40px;
+    width: calc(100% - 3rem);
+}
+
+
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
