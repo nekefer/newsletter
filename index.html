@@ -23,7 +23,18 @@
       <section class="first">
         <div class="hero">
           <!-- <picture></picture> -->
-           <img src="/assets/images/illustration-sign-up-mobile.svg" alt="" srcset="">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="/assets/images/illustration-sign-up-desktop.svg"
+            />
+            <source media="(max-width: 1023px)" srcset="/assets/images/illustration-sign-up-mobile.svg">
+            <img
+              src="/assets/images/illustration-sign-up-mobile.svg"
+              alt=""
+              srcset=""
+            />
+          </picture>
         </div>
         <div class="container">
           <div class="content"><h1> Stay updated!</h1>
@@ -57,7 +68,7 @@
           
         </div>
         
-       <button>Dismiss message</button>
+       <button class="dismiss">Dismiss message</button>
       </section>
     </main>
 
