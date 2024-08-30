@@ -23,7 +23,7 @@ body {
     width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    background-color: var(--dark-slate-grey);
+    background-color: var(--charcoal-grey);
     color: var(--dark-slate-grey);
 
 }
@@ -248,6 +248,10 @@ button:hover {
         border-radius: 36px;
         width: 928px;
         height: 641px;
+    }
+
+    .first .container {
+        margin: 1.5rem;
     }
     .second{
         width: 504px;
